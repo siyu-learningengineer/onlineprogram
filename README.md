@@ -28,6 +28,6 @@
 
 ## Current cover release
 
-White foundation with Carolina blue (#7BAFD4), Duke blue (#012169), and black. Six service cards include the new small-languages page with Japanese, Korean, Spanish, German, and French. Six mascot states respond to card hover/focus/click; leaving restores the main image. First tap previews the expression and second tap follows the link.
+Seven services: IELTS/TOEFL/Duolingo/PTE, world languages, foreign teacher speaking, research/writing, study abroad, visas, and arrival support. Colored service cards and matching line icons follow the supplied palette. Seven mascot states, including a curious research expression, respond to interaction. The visible instruction below the character is removed. Fourteen greetings cycle automatically every 1.5 seconds with rotating colors and fades; reduced-motion settings retain timed words without fades.
 
-Eight greetings cycle automatically in 1.5-second fade cycles, without a bubble or controls. Reduced-motion preference removes fades while retaining timed language changes. `greetingVideo` remains optional and unset; no greeting video was supplied. Generated expression prompts are in `assets/mascot/prompts.json`.
+Expression prompts: `assets/mascot/prompts.json`. Optional greeting video remains unset.

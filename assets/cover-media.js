@@ -5,6 +5,7 @@ window.coverMedia = {
     'assets/mascot/happy.webp',
     'assets/mascot/eager.webp',
     'assets/mascot/surprised.webp',
+    'assets/mascot/curious.webp',
     'assets/mascot/wink.webp',
     'assets/mascot/cute.webp', 'assets/mascot/playful.webp'
   ]

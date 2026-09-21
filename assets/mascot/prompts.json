@@ -28,5 +28,10 @@
     "asset": "assets/mascot/playful.webp",
     "tool": "built-in ImageGen",
     "prompt": "Preserve the reference mascot identity, brown-black hair, round glasses, yellow hoodie, blue overalls, red star, pose and transparent background. Turn head slightly right, both eyes looking upper right, playful delighted grin with tongue slightly visible and raised eyebrows. Same centered framing."
+  },
+  {
+    "asset": "assets/mascot/curious.webp",
+    "tool": "built-in ImageGen",
+    "prompt": "Preserve mascot identity, brown-black hair, glasses, clothes, framing and transparent background. Both eyes look upward to center research card, one eyebrow raised, small thoughtful curious smile."
   }
 ]
