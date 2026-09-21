@@ -11,7 +11,7 @@
   const media = window.coverMedia;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const loaded = new Map();
-  const expressions = ['开心','期待','惊讶','眨眼','可爱'];
+  const expressions = ['开心','期待','惊讶','眨眼','可爱','俏皮'];
   const languages = [
     ['zh','中文','你好'],['en','English','Hello'],['es','Español','Hola'],
     ['fr','Français','Bonjour'],['de','Deutsch','Hallo'],['it','Italiano','Ciao'],
@@ -34,29 +34,20 @@
     if (announce) status.textContent = name+'：'+word;
   }
   function stopGreeting() {
-    clearTimeout(helloTimer);
-    cover.classList.remove('is-greeting');
+    clearInterval(helloTimer);
+    cover.querySelector('.hello-floating').style.animationPlayState = 'paused';
   }
   function greet() {
-    stopGreeting(); displayLanguage(0); cover.classList.add('is-greeting');
-    if (reduced.matches) { cover.classList.remove('is-greeting'); return; }
-    let step = 0;
-    const advance = () => {
-      if (document.hidden) {stopGreeting();return;}
-      if (++step === languages.length) {
-        displayLanguage(0); stopGreeting(); return;
-      }
-      displayLanguage(step);
-      helloTimer = setTimeout(advance,1500);
-    };
-    helloTimer = setTimeout(advance,1500);
+    stopGreeting();
+    displayLanguage(languageIndex);
+    cover.querySelector('.hello-floating').style.animationPlayState = 'running';
+    if (reduced.matches) helloTimer = setInterval(advanceLanguage, 1500);
   }
-  cover.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => {
-    stopGreeting();displayLanguage(Number(button.dataset.language),true);
-  }));
-  cover.querySelector('.hello-replay').addEventListener('click',greet);
+  function advanceLanguage() { if (!document.hidden) displayLanguage((languageIndex + 1) % languages.length); }
+  cover.querySelector('.hello-floating').addEventListener('animationiteration', advanceLanguage);
+  reduced.addEventListener('change', greet);
   function restore() {
-    active = -1; armed = -1;
+    active = -1;
     cover.dataset.activeCard = '';
     cards.forEach(card => card.classList.remove('is-watched'));
     portrait.src = media.mainImage;
@@ -66,7 +57,7 @@
     hint.textContent = originalHint;
   }
   function show(index) {
-    active = index; stopGreeting();
+    active = index;
     cover.dataset.activeCard = String(index);
     cards.forEach((card,i) => card.classList.toggle('is-watched',i===index));
     const name = cards[index].querySelector('h2').textContent;
@@ -75,7 +66,7 @@
       portrait.src = src && loaded.get(src) ? src : media.mainImage;
       portrait.alt = '卡通伙伴以'+expressions[index]+'表情看向'+name;
       cover.querySelector('.mascot-stage').setAttribute('aria-label',portrait.alt);
-      motion.style.setProperty('--look-tilt',((index-2)*.8)+'deg');
+      motion.style.setProperty('--look-tilt',((index-2.5)*.8)+'deg');
     }
     hint.textContent = expressions[index]+' · '+name;
   }
@@ -99,12 +90,12 @@
         status.textContent=hint.textContent;
       }
     });
-    card.addEventListener('keydown',event => {if(event.key==='Escape'){restore();card.blur();}});
+    card.addEventListener('keydown',event => {if(event.key==='Escape'){armed=-1;restore();card.blur();}});
   });
   cover.addEventListener('pointerleave',event => {if(event.pointerType!=='touch')restore();});
-  document.addEventListener('pointerdown',event => {if(!event.target.closest('.service-ticket'))restore();});
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){stopGreeting();restore();}});
-  reduced.addEventListener('change',()=>{if(reduced.matches)stopGreeting();});
+  document.addEventListener('pointerdown',event => {if(!event.target.closest('.service-ticket')){armed=-1;restore();}});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){stopGreeting();restore();}else greet();});
+
   function finishGreetingVideo() {
     clearTimeout(videoTimer); video.pause();video.hidden=true;portrait.style.visibility='visible';
     playingVideo=false;restore();greet();

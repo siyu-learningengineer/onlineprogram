@@ -28,4 +28,6 @@
 
 ## Current cover release
 
-The homepage has five service tickets and the original brown-black-haired mascot. Card hover/focus tilts and enlarges the selected ticket; leaving restores the main portrait. The cover now includes five expression states with gaze directed toward the service cards, and an animated eight-language greeting bubble. A supplied greeting video remains optional. Configure their paths in `assets/cover-media.js` to enable the prepared media transitions. Missing assets fall back to the main portrait. Reduced-motion settings skip the greeting video.
+White foundation with Carolina blue (#7BAFD4), Duke blue (#012169), and black. Six service cards include the new small-languages page with Japanese, Korean, Spanish, German, and French. Six mascot states respond to card hover/focus/click; leaving restores the main image. First tap previews the expression and second tap follows the link.
+
+Eight greetings cycle automatically in 1.5-second fade cycles, without a bubble or controls. Reduced-motion preference removes fades while retaining timed language changes. `greetingVideo` remains optional and unset; no greeting video was supplied. Generated expression prompts are in `assets/mascot/prompts.json`.

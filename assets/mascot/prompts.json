@@ -23,5 +23,10 @@
     "asset": "assets/mascot/cute.webp",
     "tool": "built-in ImageGen",
     "prompt": "Edit this exact mascot into ONE expression variant. Preserve its identity, exact brown-black bob haircut and upward hair flick, round black clear-lens glasses, yellow hoodie, blue overalls, red star, body pose, both hands resting together, framing and realistic 3D quality. Natural chocolate brown hair, NO blue hair. Change ONLY face, head tilt and eye direction as follows: ADORABLE. Face turned gently toward VIEWER RIGHT, BOTH irises very clearly looking UP and FAR RIGHT at two o'clock. Sweet shy smile, pink rosy cheeks. Keep subject exactly centered, at same scale, waist-up, same portrait 3:4 canvas, include full hair and hands. Transparent alpha background, no scenery no floor no text no border no labels. This will be swapped with original image in a website so alignment is important."
+  },
+  {
+    "asset": "assets/mascot/playful.webp",
+    "tool": "built-in ImageGen",
+    "prompt": "Preserve the reference mascot identity, brown-black hair, round glasses, yellow hoodie, blue overalls, red star, pose and transparent background. Turn head slightly right, both eyes looking upper right, playful delighted grin with tongue slightly visible and raised eyebrows. Same centered framing."
   }
 ]

@@ -6,6 +6,6 @@ window.coverMedia = {
     'assets/mascot/eager.webp',
     'assets/mascot/surprised.webp',
     'assets/mascot/wink.webp',
-    'assets/mascot/cute.webp'
+    'assets/mascot/cute.webp', 'assets/mascot/playful.webp'
   ]
 };
