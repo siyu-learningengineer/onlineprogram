@@ -25,3 +25,7 @@
 当前使用 Online Program 作为暂定名称。尚未提供 PDF、正式品牌、联系方式、师资资料或报价，因此页面未虚构相关信息，也没有未连接后台的咨询表单。收到资料后可替换文案与图片，添加真实咨询渠道。
 
 字体使用 Google Fonts Noto Sans SC，加载失败时自动使用系统字体。导航支持键盘、Escape 关闭、移动端菜单和减弱动画偏好。
+
+## Current cover release
+
+The homepage has five service tickets and the original brown-black-haired mascot. Card hover/focus tilts and enlarges the selected ticket; leaving restores the main portrait. The greeting video and four distinct expression assets are pending. Configure their paths in `assets/cover-media.js` to enable the prepared media transitions. Missing assets fall back to the main portrait. Reduced-motion settings skip the greeting video.
