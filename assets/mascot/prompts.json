@@ -1,0 +1,27 @@
+[
+  {
+    "asset": "assets/mascot/happy.webp",
+    "tool": "built-in ImageGen",
+    "prompt": "Edit this exact mascot into ONE expression variant. Preserve its identity, exact brown-black bob haircut and upward hair flick, round black clear-lens glasses, yellow hoodie, blue overalls, red star, body pose, both hands resting together, framing and realistic 3D quality. Natural chocolate brown hair, NO blue hair. Change ONLY face, head tilt and eye direction as follows: JOYFUL. Head turned slightly toward VIEWER LEFT; BOTH irises visibly looking UP and FAR LEFT at ten o'clock. Broad happy open-mouth smile, upper teeth visible. Keep subject exactly centered, at same scale, waist-up, same portrait 3:4 canvas, include full hair and hands. Transparent alpha background, no scenery no floor no text no border no labels. This will be swapped with original image in a website so alignment is important."
+  },
+  {
+    "asset": "assets/mascot/eager.webp",
+    "tool": "built-in ImageGen",
+    "prompt": "Edit this exact mascot into ONE expression variant. Preserve its identity, exact brown-black bob haircut and upward hair flick, round black clear-lens glasses, yellow hoodie, blue overalls, red star, body pose, both hands resting together, framing and realistic 3D quality. Natural chocolate brown hair, NO blue hair. Change ONLY face, head tilt and eye direction as follows: EAGER / EXPECTANT. Head almost frontal tilted slightly to VIEWER LEFT, eyes looking UP and slightly LEFT at eleven o'clock. Bright expectant eyes, raised eyebrows, delighted closed-mouth smile. Keep subject exactly centered, at same scale, waist-up, same portrait 3:4 canvas, include full hair and hands. Transparent alpha background, no scenery no floor no text no border no labels. This will be swapped with original image in a website so alignment is important."
+  },
+  {
+    "asset": "assets/mascot/surprised.webp",
+    "tool": "built-in ImageGen",
+    "prompt": "Edit this exact mascot into ONE expression variant. Preserve its identity, exact brown-black bob haircut and upward hair flick, round black clear-lens glasses, yellow hoodie, blue overalls, red star, body pose, both hands resting together, framing and realistic 3D quality. Natural chocolate brown hair, NO blue hair. Change ONLY face, head tilt and eye direction as follows: SURPRISED. Face upright, BOTH irises looking STRAIGHT UP toward TOP CENTER at twelve o'clock, eyes wide, raised brows and small round O-shaped mouth. Keep subject exactly centered, at same scale, waist-up, same portrait 3:4 canvas, include full hair and hands. Transparent alpha background, no scenery no floor no text no border no labels. This will be swapped with original image in a website so alignment is important."
+  },
+  {
+    "asset": "assets/mascot/wink.webp",
+    "tool": "built-in ImageGen",
+    "prompt": "Edit this exact mascot into ONE expression variant. Preserve its identity, exact brown-black bob haircut and upward hair flick, round black clear-lens glasses, yellow hoodie, blue overalls, red star, body pose, both hands resting together, framing and realistic 3D quality. Natural chocolate brown hair, NO blue hair. Change ONLY face, head tilt and eye direction as follows: WINK. Face tilted toward VIEWER RIGHT, eye on LEFT OF IMAGE closed in a playful wink, eye on RIGHT OF IMAGE open with iris clearly looking UP RIGHT at one o'clock. Cheerful asymmetric smile. Keep subject exactly centered, at same scale, waist-up, same portrait 3:4 canvas, include full hair and hands. Transparent alpha background, no scenery no floor no text no border no labels. This will be swapped with original image in a website so alignment is important."
+  },
+  {
+    "asset": "assets/mascot/cute.webp",
+    "tool": "built-in ImageGen",
+    "prompt": "Edit this exact mascot into ONE expression variant. Preserve its identity, exact brown-black bob haircut and upward hair flick, round black clear-lens glasses, yellow hoodie, blue overalls, red star, body pose, both hands resting together, framing and realistic 3D quality. Natural chocolate brown hair, NO blue hair. Change ONLY face, head tilt and eye direction as follows: ADORABLE. Face turned gently toward VIEWER RIGHT, BOTH irises very clearly looking UP and FAR RIGHT at two o'clock. Sweet shy smile, pink rosy cheeks. Keep subject exactly centered, at same scale, waist-up, same portrait 3:4 canvas, include full hair and hands. Transparent alpha background, no scenery no floor no text no border no labels. This will be swapped with original image in a website so alignment is important."
+  }
+]

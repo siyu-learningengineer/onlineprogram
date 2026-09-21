@@ -28,4 +28,4 @@
 
 ## Current cover release
 
-The homepage has five service tickets and the original brown-black-haired mascot. Card hover/focus tilts and enlarges the selected ticket; leaving restores the main portrait. The greeting video and four distinct expression assets are pending. Configure their paths in `assets/cover-media.js` to enable the prepared media transitions. Missing assets fall back to the main portrait. Reduced-motion settings skip the greeting video.
+The homepage has five service tickets and the original brown-black-haired mascot. Card hover/focus tilts and enlarges the selected ticket; leaving restores the main portrait. The cover now includes five expression states with gaze directed toward the service cards, and an animated eight-language greeting bubble. A supplied greeting video remains optional. Configure their paths in `assets/cover-media.js` to enable the prepared media transitions. Missing assets fall back to the main portrait. Reduced-motion settings skip the greeting video.
