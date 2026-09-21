@@ -31,3 +31,5 @@
 Seven services: IELTS/TOEFL/Duolingo/PTE, world languages, foreign teacher speaking, research/writing, study abroad, visas, and arrival support. Colored service cards and matching line icons follow the supplied palette. Seven mascot states, including a curious research expression, respond to interaction. The visible instruction below the character is removed. Fourteen greetings cycle automatically every 1.5 seconds with rotating colors and fades; reduced-motion settings retain timed words without fades.
 
 Expression prompts: `assets/mascot/prompts.json`. Optional greeting video remains unset.
+
+Homepage now contains only the interactive cover. Bilingual card titles link to detail or category pages; all prior lower sections remain available on services.html. Skyline SVG is decorative, translucent, and arranged along a curved horizon.
