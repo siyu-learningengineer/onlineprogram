@@ -11,3 +11,7 @@
 @media(max-width:1250px){.header nav>a,.header nav>a:first-child,.header nav>.nav-drop>summary{border-bottom:1px solid #ffffff40}}
 /* Compact desktop navigation spacing. */
 @media(min-width:1251px){.header nav,.interactive-home .header>nav{flex:0 1 auto;gap:7px;margin-left:auto}.header nav>a,.header nav>.nav-drop{flex:0 1 auto}.header nav>a,.header nav>a:first-child,.header nav>.nav-drop>summary{padding-left:7px;padding-right:7px}.header .nav-drop summary{gap:4px}}
+/* Slightly larger bilingual navigation labels. */
+.header .nav-zh{font-size:18px}.header .nav-en{font-size:13px}
+@media(min-width:1251px) and (max-width:1500px){.header .nav-zh{font-size:17px}.header .nav-en{font-size:12px}}
+@media(max-width:1250px){.header .nav-zh{font-size:18px}.header .nav-en{font-size:14px}}
