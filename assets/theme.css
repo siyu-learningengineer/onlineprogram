@@ -6,3 +6,11 @@
 @media(min-width:761px) and (max-width:1200px){.header{height:auto;min-height:90px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}.header nav{flex-basis:100%;justify-content:center;font-size:11px}.interactive-home .header{height:80px}}
 @media(max-width:760px){.header nav>a:first-child{max-width:none;font-size:14px}.service-card:last-child{grid-column:auto}}
 .category-page{min-height:70vh;max-width:1200px;margin:auto}.category-page>.eyebrow{margin-top:35px}.category-page .support-panel{max-width:800px;margin-top:30px}.category-page .support-panel h3{display:none}
+
+/* Temporarily paused services: preserve pages and markup for reactivation. */
+[data-service-paused="true"]{display:none!important}
+.theme-visa{--accent:#722b36}
+.support-panel#visa,.support-panel#visa:last-child{background:#722b36;border-color:#722b36;color:#f5df9b}
+.support-panel#visa h3,.support-panel#visa .eyebrow,.support-panel#visa>a{color:#f5df9b}
+.support-panel#visa>a{border-color:#f5df9b40}
+.support-panel#visa>a:hover{background:#873746}
